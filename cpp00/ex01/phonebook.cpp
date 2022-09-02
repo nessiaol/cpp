@@ -2,22 +2,10 @@
 
 std::string	PhoneBook::trunc(std::string str)
 {
-	int caratteri;
-
 	if (str.length() > 10)
 	{
 		str.resize(10);
 		str[9] = '.';
-	}
-	else
-	{
-		caratteri = str.length();
-		str.resize(10);
-		while(caratteri < 10)
-		{
-			str[caratteri] = ' ';
-			caratteri++;
-		}
 	}
 	return str;
 		

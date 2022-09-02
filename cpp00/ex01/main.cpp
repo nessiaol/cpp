@@ -29,7 +29,11 @@ int main()
 			int y = 1;
 			while (y <= pb.counter)
 			{
-				std::cout << "|" << std::setw(10) << std::to_string(y) << "|" << pb.trunc(pb.user[y-1].getName()) << "|" << pb.trunc(pb.user[y-1].getLastName()) << "|" << pb.trunc(pb.user[y-1].getNickName()) << "|" << std::endl;
+				std::cout << "|" << std::setw(10) << std::to_string(y) 
+				<< "|" << std::setw(10) << pb.trunc(pb.user[y-1].getName()) 
+				<< "|" << std::setw(10) << pb.trunc(pb.user[y-1].getLastName()) 
+				<< "|" << std::setw(10) << pb.trunc(pb.user[y-1].getNickName()) 
+				<< "|" << std::endl;
 				y++;
 			}
 			std::cout << "+----------+----------+----------+----------+" << "\n";
